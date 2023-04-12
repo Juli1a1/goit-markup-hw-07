@@ -76,8 +76,8 @@ background-size: 1440px 600px;
 
 /* SECTION */
 .section {
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 96px;
+padding-bottom: 96px;
 }
 
 .section1 {
@@ -275,6 +275,8 @@ line-height: 1.2;
 color:var(--color-primary);
 letter-spacing: 0.02em;
 font-weight: 500;
+text-align: center;
+
 }
 
 .about-text {
@@ -282,7 +284,10 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--color-secondary);
 letter-spacing: 0.02em;
-width: 264px;
+width: 396px;
+height: 48px;
+display: flex;
+gap: 72px;
 }
 
 .title {
@@ -292,6 +297,7 @@ line-height: 1.11;
 color:var(--color-primary);
 letter-spacing: 0.02em;
 text-align: center;
+display: none;
 }
 
 .colega {
@@ -414,11 +420,13 @@ box-shadow: 0px 1px 6px rgb(46 47 66 / 8%),
 .future {
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 }
 
 .img-webstudio {
 display: flex;
 gap: 24px;
+display: none;
 }
 
 .images{
@@ -686,10 +694,9 @@ margin-bottom: 8px;
 
 .image-section{
 display: block;
-flex-basis: calc((100% -  3 * 24px) / 3);
-width: 264px;
-height: 224px;
-    }
+width: 396px;
+height: 96px;
+}
 
 
 
@@ -1147,3 +1154,84 @@ background-color: var(--color-brand);
 position: relative;
 }
 
+@media screen and (min-width:428px) {
+    .container {
+        width: 426px;
+    }
+
+    .name-section-team {
+        text-align: center;
+    }
+
+    .job > .container {
+        width: 552px;
+    }
+
+   .section-imag {
+    display: none;
+    }
+
+    .container > .future {
+        width: 396px;
+    }
+
+    .container-costumers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .container > .container-customers {
+        width: 396px;
+    }
+
+    .text-social {
+        width: 268px;
+        height: 112px;
+    }
+
+    .text-social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+    }
+
+    
+
+   
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 754px;
+    }
+
+    .name-section-team {
+        text-align: center;
+    }
+
+    .job {
+        width: calc((100% - 24px / 2));
+    }
+
+    .section-doing {
+    display: none;
+    }
+
+
+}
+
+@media screen and (min-width:1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .job {
+        display: flex;
+        gap: 24px;
+    }
+
+    .section-imag {
+        display: flex;
+    }
+}
